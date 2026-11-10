@@ -53,8 +53,8 @@ export default function PedroSelector() {
 
             <div
                 className="mx-auto mt-16 xl:mb-4 p-6 opacity-75 bg-neutral-300/50 dark:bg-neutral-950/25 border-mauve-400/25 border shadow-sm relative rounded-4xl max-w-xs transition-all duration-300 hover:shadow-lg hover:bg-neutral-400/60 dark:hover:bg-neutral-950/80 hover:opacity-100">
-                <img src="/logo-stacked-dark.svg" alt="Pedro Logo" draggable="false" className="dark:hidden"/>
-                <img src="/logo-stacked-light.svg" alt="Pedro Logo" draggable="false" className="hidden dark:block"/>
+                <img src={`${process.env.BASE_PATH}/logo-stacked-dark.svg`} alt="Pedro Logo" draggable="false" className="dark:hidden"/>
+                <img src={`${process.env.BASE_PATH}/logo-stacked-light.svg`} alt="Pedro Logo" draggable="false" className="hidden dark:block"/>
             </div>
 
             <main className="p-8">
@@ -63,7 +63,7 @@ export default function PedroSelector() {
                           title="Pedro Pathing"
                           iconClassName="border-yellow-500/65 bg-neutral-400 dark:bg-neutral-800"
                           description="The most popular autonomous pathing library for FTC"
-                          icon={<img src="/logo-duck.svg" alt="Pedro Pathing Logo" className="w-full"/>}/>
+                          icon={<img src={`${process.env.BASE_PATH}/logo-duck.svg`} alt="Pedro Pathing Logo" className="w-full"/>}/>
                     <Item link href="/docs/ivy"
                           title="Ivy"
                           iconClassName="border-green-500/65 bg-green-500/10"

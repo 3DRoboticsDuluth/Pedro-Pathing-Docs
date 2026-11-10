@@ -9,6 +9,7 @@ const config = {
   reactStrictMode: true,
   devIndicators: false,
   output: "export",
+  trailingSlash: true,
   basePath,
   images: {
     unoptimized: true

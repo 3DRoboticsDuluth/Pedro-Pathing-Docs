@@ -8,11 +8,10 @@ import Link from "next/link";
 export function Provider({children}: { children: ReactNode }) {
     return (
         <>
-            <Banner variant="rainbow" id="ivy-release">
+            <Banner variant="rainbow" id="pedro-v2-archive">
                 <span className="prose">
-                    <Link className="link prose" href="https://doi.org/10.5281/zenodo.20725318">
-                        View the Pedro Pathing White Paper
-                    </Link>
+                    Unofficial Pedro Pathing v2.1.2 documentation archive (pre-v3 snapshot).{' '}
+                    <Link className="link prose" href="https://pedropathing.com/docs">Current official documentation</Link>
                 </span>
             </Banner>
             <RootProvider theme={{defaultTheme: 'dark'}} search={{SearchDialog}}>{children}</RootProvider>
